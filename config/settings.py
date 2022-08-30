@@ -44,16 +44,28 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = [
+DJNAGO_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'demos',
-    'rest_framework',
 ]
+
+ADDITIONAL_APPS = [
+    'rest_framework',
+
+]
+
+
+PROJECT_APPS =[
+    'demos',
+    'example',
+]
+
+
+INSTALLED_APPS  = DJNAGO_APPS + PROJECT_APPS + ADDITIONAL_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
