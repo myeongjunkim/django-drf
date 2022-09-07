@@ -23,6 +23,7 @@ router = routers.DefaultRouter()
 router.register('demos', PostModelViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('demo/', include(router.urls)),
+    path('example/', include('example.urls')),
     path('admin/', admin.site.urls),
 ]
