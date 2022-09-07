@@ -62,6 +62,7 @@ ADDITIONAL_APPS = [
 PROJECT_APPS =[
     'demos',
     'example',
+    'todo',
 ]
 
 
