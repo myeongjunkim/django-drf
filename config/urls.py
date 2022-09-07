@@ -25,5 +25,6 @@ router.register('demos', PostModelViewSet)
 urlpatterns = [
     path('demo/', include(router.urls)),
     path('example/', include('example.urls')),
+    path('todo/', include('todo.urls')),
     path('admin/', admin.site.urls),
 ]
