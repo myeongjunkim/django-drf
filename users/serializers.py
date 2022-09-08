@@ -57,8 +57,8 @@ class LoginSerializer(serializers.Serializer):
             {"error": "Unable to log in with provided credentials."})
 
 
-# class ProfileSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Profile
-#         fields = ("nickname", "position", "subjects")
-#         # extra_kwargs = {"image": {"required": False, "allow_null": True}}
+class ProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Profile
+        fields = ("nickname", "position", "subjects", "image")
+        # extra_kwargs = {"image": {"required": False, "allow_null": True}}

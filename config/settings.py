@@ -56,6 +56,7 @@ DJNAGO_APPS = [
 ADDITIONAL_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
+    'corsheaders',
 
 ]
 
