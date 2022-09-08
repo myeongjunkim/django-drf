@@ -23,8 +23,9 @@ router = routers.DefaultRouter()
 router.register('demos', PostModelViewSet)
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
     path('demo/', include(router.urls)),
     path('example/', include('example.urls')),
     path('todo-api/', include('todo.urls')),
-    path('admin/', admin.site.urls),
+    path('users/', include('users.urls')),
 ]
