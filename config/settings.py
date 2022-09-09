@@ -66,6 +66,7 @@ PROJECT_APPS =[
     'example',
     'todo',
     'users',
+    'posts',
 ]
 
 
